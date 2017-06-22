@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mains.css">
+
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<img src="img/usa-logo.png">
+		</div>
+	</header>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+
+			<ul class="nav navbar-nav">
+				<li><a href="#">TGIF</a></li>
+				<li><a href="home-starter-page.html">Home</a></li>
+				<li class="active">
+					<a href="house-starter-page.html" class="dropdown-toggle" data-toggle="dropdown" href="#"> Congress 113
+                           <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="house-starter-page.html">House</a></li>
+						<li><a href="senatesss.html">Senates</a></li>
+
+
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                           <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="attendanceSENATE-starter-page.html">House</a></li>
+						<li><a href="partySENATE-loyalty-starter-page.html">Senates</a></li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<!--Table container-->
+	<div class="container">
+		<h2>Senators</h2>
+		<p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+	</div>
+
+
+
+	<div class="container">
+		<p>Filter by Party:</p>
+		<div id="check">
+			<div class="margin1"> REPUBLICAN: <input type="checkbox" id="REPUBLICAN" value="R"></div>
+			<div class="margin1"> DEMOCRAT:<input type="checkbox" id="DEMOCRAT" value="D"></div>
+			<div class="margin1"> INDEPENDENT: <input type="checkbox" id="INDEPENDENT" value="I"></div>
+		    <div class="margin10">
+			<div class="margin1" >Use Data Source:</div>
+			
+			<div class="margin1"> NYT<input type="checkbox" id="nyt" value="Y"></div>
+			<div class="margin1"> SUN LIGHT LAB <input type="checkbox" id="sun" value="S"></div>
+			</div>
+			<div class="filtroMargin">
+			<div id="filtro" class="margin1">
+			<h4>Filter</h4>
+			<div>
+			<select id="select">
+			<option id="all" value="all"></option>
+			</select>
+			</div>
+			</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+	
+
+	<div class="overflow">
+
+		<table class="table" id="taabla">
+		<thead>
+			<th>Name</th>
+			<th>Party</th>
+			<th>State</th>
+			<th>Seniority</th>
+			<th>Votes</th>
+			<th>Birthday</th>
+			<th>Api</th>
+		</thead>
+			
+		<tbody id="tbody">
+			
+		</tbody>
+		</table>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<script src="datos2.js"></script>
+
+</body>
+
+</html>
